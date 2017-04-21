@@ -18,4 +18,8 @@ extension NSObject {
     return "\(self)"
   }
   
+  func log(_ message: String) {
+    print("\(className): \(message)")
+  }
+  
 }
