@@ -17,6 +17,8 @@
 		BBE7AEE61EA9C2C2005EBAD7 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBE7AEE51EA9C2C2005EBAD7 /* MessageCell.xib */; };
 		BBE7AEE81EA9C2CD005EBAD7 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE7AEE71EA9C2CD005EBAD7 /* MessageCell.swift */; };
 		BBE7AEEB1EA9C4FE005EBAD7 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE7AEEA1EA9C4FE005EBAD7 /* NSObject+Extension.swift */; };
+		BBE7AEEE1EAA2E57005EBAD7 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE7AEED1EAA2E57005EBAD7 /* AppCoordinator.swift */; };
+		BBE7AEF01EAA2E7A005EBAD7 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE7AEEF1EAA2E7A005EBAD7 /* NavigationCoordinator.swift */; };
 		D639F039766EB391F6205988 /* Pods_RxCocoaTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18459C28002A861D90ACD1A7 /* Pods_RxCocoaTableViewDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		BBE7AEE51EA9C2C2005EBAD7 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		BBE7AEE71EA9C2CD005EBAD7 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		BBE7AEEA1EA9C4FE005EBAD7 /* NSObject+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		BBE7AEED1EAA2E57005EBAD7 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		BBE7AEEF1EAA2E7A005EBAD7 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		BB18C9D71EA9AADB00AFC517 /* RxCocoaTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BBE7AEEC1EAA2E3A005EBAD7 /* Coordinators */,
 				BBE7AEE91EA9C4E6005EBAD7 /* Extensions */,
 				BBE7AEE41EA9C2A6005EBAD7 /* Cells */,
 				BBE7AEE11EA9BF07005EBAD7 /* Messages */,
@@ -116,6 +121,15 @@
 				BBE7AEEA1EA9C4FE005EBAD7 /* NSObject+Extension.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		BBE7AEEC1EAA2E3A005EBAD7 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BBE7AEED1EAA2E57005EBAD7 /* AppCoordinator.swift */,
+				BBE7AEEF1EAA2E7A005EBAD7 /* NavigationCoordinator.swift */,
+			);
+			name = Coordinators;
 			sourceTree = "<group>";
 		};
 		C46C60E9F0E86F4AE1E0A6DE /* Frameworks */ = {
@@ -260,12 +274,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBE7AEF01EAA2E7A005EBAD7 /* NavigationCoordinator.swift in Sources */,
 				BBE7AEE01EA9BE82005EBAD7 /* Message.swift in Sources */,
 				BBE7AEE81EA9C2CD005EBAD7 /* MessageCell.swift in Sources */,
 				BB18C9DB1EA9AADB00AFC517 /* MessageVC.swift in Sources */,
 				BBE7AEE31EA9BFAC005EBAD7 /* MessageViewModel.swift in Sources */,
 				BB18C9D91EA9AADB00AFC517 /* AppDelegate.swift in Sources */,
 				BBE7AEEB1EA9C4FE005EBAD7 /* NSObject+Extension.swift in Sources */,
+				BBE7AEEE1EAA2E57005EBAD7 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
